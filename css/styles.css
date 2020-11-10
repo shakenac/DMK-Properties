@@ -36,8 +36,8 @@ a {
    text-decoration: none;
 	text-transform: uppercase;
 	color: #424242;
-	font-size: 14px;
-	letter-spacing: .8px;
+	font-size: 13px;
+	letter-spacing: 1px;
 }
 
 h1, h2 {
@@ -72,14 +72,14 @@ img {
 }
 
 
-/* Header ----------------------------------------*/
+/* Header ---------------------------------------------*/
 .navbar {
 	background-color: #fff;
-	height: 70px;
+	height: 75px;
+	padding: 10px;
 }
 .navbar .flex {
 	justify-content: flex-start; /*vertical alignment*/
-
 }
 .navbar ul {
 	display: flex;
@@ -96,9 +96,34 @@ img {
 	font-weight: 700;
 }
 .navbar img {
-	width: 250px;
-	margin-right: 50px;
+	width: 235px;
+	margin-right: 40px;
 }
+.current {
+	font-weight: 700;
+}
+
+/* nav dropdown menu */
+.navbar .drop-menu {
+	display: none;
+}
+.navbar li:hover > ul.drop-menu {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	padding: 5px 10px;
+	z-index: 1;
+	background: #fff;
+	-webkit-box-shadow: 1px 16px 10px -12px rgba(0, 0, 0, 0.4);
+	box-shadow: 1px 16px 10px -12px rgba(0, 0, 0, 0.4);
+}
+.navbar .drop-menu li {
+	/* position: absolute; */
+	margin: 5px;
+
+	/* justify-content: flex-start; */
+}
+
 
 /* Cover Image (Home)----------------------------------*/
 .cover-img {
