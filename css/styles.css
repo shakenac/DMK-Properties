@@ -37,11 +37,12 @@ a {
 	text-transform: uppercase;
 	color: #424242;
 	font-size: 14px;
-	letter-spacing: .6px;
+	letter-spacing: .8px;
 }
 
 h1, h2 {
    font-family: 'Karoll-LightRound', serif;
+	font-weight: 400;
 	margin: 10px 0;
 }
 h1 {
@@ -51,6 +52,7 @@ h1 {
 	text-align: center;
 	color: #fff;
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.356);
+	z-index: 1;
 }
 h2 {
 	font-size: 27px;
@@ -60,6 +62,7 @@ h2 {
 	text-align: center;
 	color: #424242;
 }
+
 p {
 	margin: 10px 0;
 }
@@ -69,11 +72,9 @@ img {
 }
 
 
-/* Header .navbar-----------------------------*/
-
-/* navigation */
+/* Header ----------------------------------------*/
 .navbar {
-	background-color: #eee;
+	background-color: #fff;
 	height: 70px;
 }
 .navbar .flex {
@@ -86,7 +87,6 @@ img {
 }
 .navbar li {
 	justify-content: flex-start;
-
 	margin: 0 5px;
 }
 .navbar a {
@@ -98,4 +98,26 @@ img {
 .navbar img {
 	width: 250px;
 	margin-right: 50px;
+}
+
+/* Cover Image (Home)----------------------------------*/
+.cover-img {
+	background-color: #222;
+	background-image: url(../images/home.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	height: 650px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.cover-overlay {
+	width: 100%;
+	height: 100%;
+	background: #222;
+	opacity: .275;
+	position: absolute;
 }
