@@ -9,3 +9,8 @@
 	margin: 0 auto;
 	padding: 0 40px;
 }
+
+.flex {
+	display: flex;
+	align-items: flex-start;
+}

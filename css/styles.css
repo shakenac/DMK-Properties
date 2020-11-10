@@ -1,4 +1,29 @@
+/* CSS pgs ---------------------------------*/
+@import "fonts.css";
+@import "utilities.css";
+
+
 a {
 	text-decoration: none;
 	color: #222;
 }
+
+/* Header --------------------------------------*/
+.navbar {
+
+}
+
+nav {
+	display: inline-block
+}
+
+.navbar img {
+	width:
+}
+
+/* header {
+	height:
+} */
+
+
+/* Cover Image -----------------------------------*/
