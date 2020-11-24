@@ -227,3 +227,12 @@ img {
    letter-spacing: 0;
    font-style: italic;
 }
+
+/* Footer ----------------------------------------------*/
+
+footer {
+   padding: 10px;
+   text-align: center;
+   background-color: #222;
+   color: #aaa;
+}
