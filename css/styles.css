@@ -40,13 +40,13 @@ a {
 	letter-spacing: 1px;
 }
 
-h1, h2 {
+h1, h2, h3 {
    font-family: 'Karoll-LightRound', serif;
 	font-weight: 400;
 	margin: 10px 0;
 }
 h1 {
-	font-size: 84px;
+	font-size: 80px;
 	line-height: 1.25em;
 	letter-spacing: .71px;
 	text-align: center;
@@ -59,9 +59,17 @@ h2 {
 	font-weight: 400;
 	line-height: 1.6em;
 	letter-spacing: 2px;
-	text-align: center;
+	/* text-align: center; */
 	color: #424242;
 }
+h3 {
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 1.6em;
+	letter-spacing: 2px;
+	color: #424242;
+}
+
 
 p {
 	margin: 10px 0;
@@ -75,8 +83,10 @@ img {
 /* Header ---------------------------------------------*/
 .navbar {
 	background-color: #fff;
-	height: 75px;
+	height: 65px;
 	padding: 10px;
+	/* -webkit-box-shadow: 1px 16px 10px -12px rgba(0, 0, 0, 0.4);
+	box-shadow: 1px 16px 10px -12px rgba(0, 0, 0, 0.4); */
 }
 .navbar .flex {
 	justify-content: flex-start; /*vertical alignment*/
@@ -124,7 +134,6 @@ img {
 	/* justify-content: flex-start; */
 }
 
-
 /* Cover Image (Home)----------------------------------*/
 .cover-img {
 	background-color: #222;
@@ -146,3 +155,14 @@ img {
 	opacity: .275;
 	position: absolute;
 }
+
+/* About section ----------------------------------------*/
+.about {
+   margin: 150px auto;
+}
+.about h3 {
+   text-align: center;
+   margin: 20px 0;
+}
+
+/* Properties section (Home) --------------------------*/
