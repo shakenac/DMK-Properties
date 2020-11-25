@@ -25,6 +25,7 @@ body {
 	overflow: hidden; /*hide scrollbar*/
 }
 
+/* Grids -----------------------------------------------*/
 /* 2 column grid */
 .grid {
    display: grid;
@@ -92,8 +93,6 @@ h3 {
 	letter-spacing: 2px;
 	color: #424242;
 }
-
-
 p {
 	margin: 10px 0;
    font-weight: 400;
@@ -104,6 +103,7 @@ img {
 	width: 100%; /* img takes up its whole container*/
 }
 
+/* Button ---------------------------------------------*/
 .btn {
    display: inline-block;
    font-family: 'Raleway', sans-serif;

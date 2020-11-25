@@ -1,0 +1,57 @@
+.inquire-info p {
+	margin-bottom: 24px;
+	color: #222;
+}
+
+/* form labels */
+label,
+input,
+select {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	line-height: 1.6em;
+	letter-spacing: .02px;
+}
+label {
+	color: #222;
+}
+.check-in label {
+	color: #adadad;
+}
+
+/* inputs */
+.form-control input,
+.form-control textarea {
+	margin-bottom: 24px;
+	width: 100%;
+}
+input,
+textarea {
+	border: 1px solid #e6e6e6;
+	padding: 10px;
+	border-radius: 3px;
+	background: #fafafa;
+}
+
+::placeholder {
+	color: #adadad;
+	/* padding: 5px; */
+}
+
+/* select inputs */
+.form-control select {
+	padding: 5px;
+	width: 100px;
+	background: #fafafa;
+	border: 1px solid #e6e6e6;
+}
+.guest-type,
+.rental-selection {
+	margin-bottom: 24px;
+	display: block;
+}
+.guest-type label,
+.rental-selection label {
+	padding: 5px;
+	display: block;
+}
