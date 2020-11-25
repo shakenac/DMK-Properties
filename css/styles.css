@@ -127,7 +127,22 @@
 /* Cover Image (Inquire)----------------------------------*/
 .cover-img-inquire {
 	background-color: #222;
-	/* background-image: url(../images/contact-banner.jpg); */
+	/* background-image: url(../images/agreement.jpg); */
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	height: 650px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Cover Image (Agreement)----------------------------------*/
+.cover-img-agreement {
+	background-color: #222;
+	background-image: url(../images/agreement.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -253,6 +268,12 @@
    margin-bottom: 25px;
    font-weight: 400;
 }
+
+/* Inquire Page ----------------------------------------------*/
+.agreement {
+   margin: 100px auto;
+}
+
 
 /* Footer ----------------------------------------------*/
 footer {
