@@ -273,7 +273,14 @@
 .agreement {
    margin: 100px auto;
 }
-
+.agreement ol {
+   margin-left: 15px;
+}
+.agreement ol li {
+   font-weight: 300;
+   margin-bottom: 10px;
+   padding-left: 10px;
+}
 
 /* Footer ----------------------------------------------*/
 footer {
