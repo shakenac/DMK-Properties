@@ -46,9 +46,13 @@ body {
    grid-template-columns: repeat(3, 1fr);
    gap: 40px;
 }
-.grid-gallery {
+.grid-2-gallery {
    display: grid;
    gap: 20px;
+}
+.grid-2-contact {
+   display: grid;
+   grid-template-columns: 1fr 2fr;
 }
 
 ul {
@@ -217,10 +221,25 @@ img {
 	align-items: center;
 }
 
-/* Cover Image (Home)----------------------------------*/
+/* Cover Image (Bronx)----------------------------------*/
 .cover-img-bronx {
 	background-color: #222;
 	background-image: url(../images/bronx-map-low.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	height: 650px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Cover Image (Contact)----------------------------------*/
+.cover-img-contact {
+	background-color: #222;
+	background-image: url(../images/contact-banner.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
