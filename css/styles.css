@@ -77,10 +77,10 @@ h1 {
 	z-index: 1;
 }
 h2 {
-	font-size: 27px;
+	font-size: 25px;
 	font-weight: 400;
 	line-height: 1.6em;
-	letter-spacing: 1px;
+	/* letter-spacing: 1px; */
 	/* text-align: center; */
 	color: #424242;
    margin-bottom: 25px;
@@ -307,6 +307,9 @@ img {
 .reviews {
    margin-bottom: 150px;
    color: #555;
+}
+.reviews h2, .reviews p {
+   font-style: italic;
 }
 
 
