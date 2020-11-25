@@ -66,7 +66,7 @@ a {
 h1, h2, h3 {
    font-family: 'Karoll-LightRound', serif;
 	font-weight: 400;
-	margin: 10px 0;
+	/* margin: 10px 0; */
 }
 h1 {
 	font-size: 80px;
@@ -126,4 +126,27 @@ img {
    color: #222;
    background-color: #fff;
    border: solid #222 2px;
+}
+
+.inquire-btn {
+   display: inline-block;
+   font-family: 'Raleway', sans-serif;
+   font-weight: 600;
+   font-size: 11px;
+   letter-spacing: .1em;
+   text-transform: uppercase;
+   transition: background .2s ease-in-out;
+   padding: 10px 25px;
+   border-radius: 3px;
+   color: #222;
+   background-color: #fff;
+   border: solid #222 2px;
+   margin: 10px 0;
+}
+.inquire-btn:hover {
+   transition: background .2s ease-in-out;
+   color: #fff;
+   background-color: #222;
+   border: solid #222 2px;
+   cursor: pointer;
 }

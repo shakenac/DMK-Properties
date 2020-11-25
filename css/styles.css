@@ -124,8 +124,23 @@
 	align-items: center;
 }
 
+/* Cover Image (Inquire)----------------------------------*/
+.cover-img-inquire {
+	background-color: #222;
+	/* background-image: url(../images/contact-banner.jpg); */
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	height: 650px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
-/* About section ----------------------------------------*/
+
+/* About Section ----------------------------------------*/
 .about {
    margin: 150px auto;
    max-width: 750px;
@@ -137,18 +152,21 @@
 }
 
 
-/* Properties section (Home) ---------------------------*/
+/* Properties Section (Home) ---------------------------*/
 .properties-home {
    padding-bottom: 150px;
 }
 .properties-home .properties-right .thumb-img {
    max-height: 350px;
 }
+.properties-home .thumb-img {
+   margin-bottom: 20px;
+}
 .properties-home img {
    max-height: 350px;
 }
 
-/* Quote section --------------------------------------*/
+/* Quote Section --------------------------------------*/
 .quote {
    padding: 150px 0;
    /* margin-bottom: 150px; */
@@ -212,7 +230,7 @@
    font-style: italic;
 }
 
-/* Contact ----------------------------------------------*/
+/* Contact Page ----------------------------------------------*/
 .contact {
    margin: 100px auto;
 }
@@ -224,6 +242,15 @@
    margin-bottom: 20px;
 }
 .contact-p-bold {
+   font-weight: 400;
+}
+
+/* Inquire Page ----------------------------------------------*/
+.inquire {
+   margin: 100px auto;
+}
+.inquire-form p {
+   margin-bottom: 25px;
    font-weight: 400;
 }
 

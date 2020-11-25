@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="stylesheet" href="css/reset.css"> -->
+	<!-- <link rel="stylesheet" href="css/utilities.css"> -->
+	<link rel="stylesheet" href="css/styles.css">
+	<title>DMK Properties LLC</title>
+</head>
+<body>
+	<!-- .navbar -->
+	<div class="navbar">
+		<div class="container flex">
+			<img src="images/dmk_logos.png" alt="DMK Properties Logo">
+
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a class="properties-dropdown" href="#">Properties</a>
+						<ul class="drop-menu">
+							<li><a href="dover.html">Dover, DE</a></li>
+							<li><a href="bronx.html">Bronx, NY</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a class="current" href="inquire.html">Inquire</a></li>
+					<li><a href="agreement.html">Agreement</a></li>
+				</ul>
+			</nav>
+
+		</div><!--.container .flex-->
+	</div><!--.navbar-->
+
+	<!-- Cover Image -->
+	<section class="cover-img-inquire">
+		<h1>Inquire</h1>
+		<div class="cover-overlay"></div>
+	</section>
+
+	<!-- Contact Info -->
+	<section class="inquire container grid-2-contact">
+
+		<div class="inquire-locations">
+			<h2>Locations</h2>
+			<div class="dover-btn">
+				<a class="inquire-btn" href="dover.html">Dover, DE</a>
+			</div>
+			<div class="bronx-btn">
+				<a class="inquire-btn" href="bronx.html">Bronx, DE</a>
+			</div>
+		</div>
+		<!-- inquire form -->
+		<div class="inquire-form">
+			<p>To find out the availability on your desired location, check-in and check-out time/date, submit this form and you will receive a response within 24 hours.</p>
+			<form>
+				<div class="form-control contact-first-name">
+					<label for="fname">First Name *</label>
+					<input type="text" name="fname" required>
+				</div>
+				<div class="form-control contact-last-name">
+					<label for="lname">Last Name *</label>
+					<input type="text" name="fname" required>
+				</div>
+				<div class="form-control contact-email">
+					<label for="email">Email Address *</label>
+					<input type="email" name="email" required>
+				</div>
+				<div class="form-control guest-type">
+               <label for="type">Guest Type</label>
+               <select name="type" id="guest-type" required>
+                  <option value="student">Student</option>
+                  <option value="corporate">Corporate</option>
+                  <option value="Leisure">Leisure</option>
+               </select>
+            </div>
+				<div class="form-control reason">
+               <label for="reason">Reason for staying</label>
+               <textarea name="reason" id="reason" cols="30" rows="10" required></textarea>
+            </div>
+            <div class="form-control rental-selection">
+               <label for="rental-selection">Rental Selection</label>
+               <select name="rental-selection" id="rental-selection" required>
+                  <option value="dover">Dover, DE</option>
+                  <option value="bronx">Bronx, NY</option>
+               </select>
+            </div>
+            <div class="form-control check-in">
+               <label for="check-in">Planned Check-in</label>
+               <input type="date" id="check-in" name="check-in" required>
+            </div>
+            <div class="form-control check-out">
+               <label for="check-out">Planned Check-out</label>
+               <input type="date" id="check-out" name="check-out" required>
+            </div>
+            <div class="form-control adults">
+               <label for="adults">Number of Adult Guests - Including you</label>
+               <input type="text" name="adults" placeholder="Adult Guests" required>
+            </div>
+            <div class="form-control children">
+               <label for="children">Number of Child Guests</label>
+               <input type="text" name="children" placeholder="Child Guests">
+            </div>
+            <div class="form-control other-notes">
+               <label for="other-notes">Other Notes</label>
+               <textarea name="other-notes" id="other-notes" cols="30" rows="10" required></textarea>
+            </div>
+
+				<div class="submit">
+					<input type="submit" class="btn" value="submit">
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<footer>
+		<p>Local: 302.294.1783 &ensp; &bull; &ensp; Toll-Free: 1.888.298.0917 &ensp; &bull; &ensp; michaelk@dmkrental.com &ensp;/ &ensp; DMK Properties LLC &ensp; &bull; &ensp; &copyCopyright 2020</p>
+	</footer>
+
+</body>
+</html>
