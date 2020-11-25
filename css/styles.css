@@ -175,7 +175,6 @@ img {
 .navbar .drop-menu li {
 	/* position: absolute; */
 	margin: 5px;
-
 	/* justify-content: flex-start; */
 }
 
@@ -238,7 +237,7 @@ img {
 /* Properties section (Home) ---------------------------*/
 .properties-home {
    /* margin-bottom: 150px; */
-   border-bottom: 1px solid #e8e8e8;
+   /* border-bottom: 1px solid #e8e8e8; */
    padding-bottom: 150px;
 }
 .properties-home .properties-right .thumb-img {
@@ -256,9 +255,10 @@ img {
 
 /* Quote section --------------------------------------*/
 .quote {
-   padding-top: 150px;
-   margin-bottom: 150px;
+   padding: 150px 0;
+   /* margin-bottom: 150px; */
    text-align: center;
+   background-color: #efe0a4;
 }
 .quote h2 {
    letter-spacing: 0;
@@ -266,7 +266,6 @@ img {
 }
 
 /* Dover Page ------------------------------------------*/
-
 /* Property Info */
 .property-info {
    margin: 150px auto;
@@ -290,9 +289,8 @@ img {
 
 /* Local Attraction */
 .attractions {
-   margin-bottom: 150px;
+   /* margin-bottom: 150px; */
    padding-bottom: 150px;
-   border-bottom: 1px solid #e8e8e8;
    color: #555;
 }
 .attractions p {
@@ -305,8 +303,10 @@ img {
 
 /* Reviews */
 .reviews {
-   margin-bottom: 150px;
-   color: #555;
+   /* margin-bottom: 150px; */
+   padding: 150px 0;
+   color: #222;
+   background-color: #efe0a4;
 }
 .reviews h2, .reviews p {
    font-style: italic;
@@ -318,5 +318,8 @@ footer {
    padding: 10px;
    text-align: center;
    background-color: #222;
-   color: #aaa;
+   color: #888;
+}
+footer p {
+   font-size: 13px;
 }
