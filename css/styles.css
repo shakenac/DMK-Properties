@@ -21,7 +21,7 @@ body {
 	overflow: auto;
 	padding: 0 40px;
 }
-.flex{
+.flex {
 	display: flex;
 	justify-content: center; /*vertical alignment*/
 	align-items: center;
@@ -216,13 +216,22 @@ img {
 	justify-content: center;
 	align-items: center;
 }
-.cover-overlay {
+
+/* Cover Image (Home)----------------------------------*/
+.cover-img-bronx {
+	background-color: #222;
+	background-image: url(../images/bronx-map-low.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	height: 650px;
 	width: 100%;
-	height: 100%;
-	background: #222;
-	opacity: .275;
-	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+
 
 /* About section ----------------------------------------*/
 .about {
