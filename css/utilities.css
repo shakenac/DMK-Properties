@@ -95,8 +95,9 @@ h3 {
 }
 p {
 	margin: 10px 0;
-   font-weight: 400;
+   font-weight: 300;
    line-height: 1.7em;
+   letter-spacing: .6px;
 }
 
 img {
