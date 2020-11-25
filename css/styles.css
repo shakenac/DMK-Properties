@@ -39,7 +39,11 @@ body {
 .grid-2 {
    display: grid;
    grid-template-columns: 2fr 1fr;
-   grid-column-gap: 40px;
+   grid-column-gap: 50px;
+}
+.grid-gallery {
+   display: grid;
+   gap: 20px;
 }
 
 ul {
@@ -256,8 +260,30 @@ img {
    font-style: italic;
 }
 
-/* Footer ----------------------------------------------*/
+/* Dover Page ------------------------------------------*/
 
+/* Property Info */
+.property-info {
+   margin: 150px auto;
+}
+.property-info .information {
+   max-width: 650px;
+}
+.property-info p {
+   margin-bottom: 20px;
+}
+.property-info .property-highlights li {
+   font-family: 'Karoll-LightRound', sans-serif;
+   font-size: 27px;
+   margin: 10px 0 20px;
+}
+
+/* Image gallery */
+.img-gallery {
+   margin-bottom: 150px;
+}
+
+/* Footer ----------------------------------------------*/
 footer {
    padding: 10px;
    text-align: center;
