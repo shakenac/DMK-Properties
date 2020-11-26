@@ -29,10 +29,6 @@
 .navbar a:hover {
 	font-weight: 700;
 }
-.navbar .logo a img {
-   /* justify-content: center; */
-   align-items: center;
-}
 .navbar img {
 	width: 235px;
 	margin-right: 40px;
