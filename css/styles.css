@@ -334,6 +334,12 @@ footer p {
 @media(max-width: 768px) {
 
 	/*REDUCE HEIGHT OF COVER IMGS*/
+	.cover {
+		height: 500px;
+	}
+	h1 {
+		font-size: 55px;
+	}
 
 	.grid, .grid-2, .reviews .grid-3 {
 		grid-template-columns: 1fr;
@@ -377,6 +383,9 @@ footer p {
 /* Mobile */
 @media(max-width: 500px) {
 
+	.cover {
+		height: 350px;
+	}
 	.attractions .grid-3 {
 		grid-template-columns: 1fr;
 	}
