@@ -3,6 +3,13 @@
 @import "utilities.css";
 @import "forms.css";
 
+/* Colors ---------------------------------------------*/
+:root {
+	--main-text-color: #000;
+	--gray-bg: #222;
+	--dark-gray: #555;
+	--yellow: #efe0a4;
+}
 
 /* Header ---------------------------------------------*/
 .navbar {
@@ -59,7 +66,7 @@
 
 /* Cover Image (Home)----------------------------------*/
 .cover-img {
-	background-color: #222;
+	background-color: var(--gray-bg);
 	background-image: url(../images/home.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -74,7 +81,7 @@
 .cover-overlay {
 	width: 100%;
 	height: 100%;
-	background: #222;
+	background: var(--gray-bg);
 	/* opacity: .275; */
    opacity: .5;
 	position: absolute;
@@ -82,7 +89,7 @@
 
 /* Cover Image (Dover)----------------------------------*/
 .cover-img-dover {
-	background-color: #222;
+	background-color: var(--gray-bg);
 	background-image: url(../images/home-dover.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -97,7 +104,7 @@
 
 /* Cover Image (Bronx)----------------------------------*/
 .cover-img-bronx {
-	background-color: #222;
+	background-color: var(--gray-bg);
 	background-image: url(../images/bronx-map-low.png);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -112,7 +119,7 @@
 
 /* Cover Image (Contact)----------------------------------*/
 .cover-img-contact {
-	background-color: #222;
+	background-color: var(--gray-bg);
 	background-image: url(../images/adam-solomon-WHUDOzd5IYU-unsplash.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -127,14 +134,14 @@
 .cover-overlay-contact {
 	width: 100%;
 	height: 100%;
-	background: #222;
+	background: var(--gray-bg);
 	opacity: .7;
 	position: absolute;
 }
 
 /* Cover Image (Inquire)----------------------------------*/
 .cover-img-inquire {
-	background-color: #222;
+	background-color: var(--gray-bg);
 	background-image: url(../images/jaye-haych-7tkDoo2L_Eg-unsplash.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -149,7 +156,7 @@
 
 /* Cover Image (Agreement)----------------------------------*/
 .cover-img-agreement {
-	background-color: #222;
+	background-color: var(--gray-bg);
 	background-image: url(../images/agreement.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -194,7 +201,7 @@
    padding: 150px 0;
    /* margin-bottom: 150px; */
    text-align: center;
-   background-color: #efe0a4;
+   background-color: var(--yellow);
 }
 .quote h2 {
    letter-spacing: 0;
@@ -231,7 +238,7 @@
 .attractions {
    /* margin-bottom: 150px; */
    padding-bottom: 80px;
-   color: #555;
+   color: var(--dark-gray);
 }
 .attractions p {
    font-weight: 400;
@@ -246,8 +253,8 @@
 .reviews {
    /* margin-bottom: 150px; */
    padding: 80px 0;
-   color: #222;
-   background-color: #efe0a4;
+   color: var(--main-text-color);
+   background-color: var(--yellow);
 }
 .reviews h2, .reviews p {
    font-style: italic;
@@ -259,7 +266,6 @@
 }
 .contact p {
    margin: 0;
-   /* font-weight: 300; */
 }
 .contact .contact-info div {
    margin-bottom: 20px;
@@ -297,7 +303,7 @@
 footer {
    padding: 10px;
    text-align: center;
-   background-color: #222;
+   background-color: var(--gray-bg);
    color: #888;
 }
 footer p {

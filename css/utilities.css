@@ -6,7 +6,7 @@
 
 body {
    font-family: 'Source Sans Pro', sans-serif;
-   color: #424242;
+   /* color: #424242; */
    line-height: 1.6em;
    letter-spacing: .02px;
 }
@@ -59,7 +59,7 @@ ul {
 a {
    text-decoration: none;
 	text-transform: uppercase;
-	color: #424242;
+	color: var(--dark-gray);
 	font-size: 13px;
 	letter-spacing: 1px;
 }
@@ -84,7 +84,7 @@ h2 {
 	line-height: 1.6em;
 	/* letter-spacing: 1px; */
 	/* text-align: center; */
-	color: #222;
+	color: var(--main-text-color);
    margin-bottom: 25px;
 }
 h3 {
@@ -92,7 +92,7 @@ h3 {
 	font-weight: 400;
 	line-height: 1.6em;
 	letter-spacing: 2px;
-	color: #424242;
+	color: var(--main-text-color);
 }
 p {
 	margin: 10px 0;
@@ -117,16 +117,16 @@ img {
    padding: 10px 25px;
    border-radius: 3px;
    color: #fff;
-   background-color: #222;
+   background-color: var(--gray-bg);
    border: solid #222 2px;
    cursor: pointer;
    margin: 10px 0;
 }
 .btn:hover {
    transition: background .2s ease-in-out;
-   color: #222;
+   color: var(--gray-bg);
    background-color: #fff;
-   border: solid #222 2px;
+   border: solid var(--gray-bg) 2px;
 }
 
 .inquire-btn {
@@ -139,15 +139,15 @@ img {
    transition: background .2s ease-in-out;
    padding: 10px 25px;
    border-radius: 3px;
-   color: #222;
+   color: var(--main-text-color);
    background-color: #fff;
-   border: solid #222 2px;
+   border: solid var(--gray-bg) 2px;
    margin: 10px 0;
 }
 .inquire-btn:hover {
    transition: background .2s ease-in-out;
    color: #fff;
-   background-color: #222;
-   border: solid #222 2px;
+   background-color: var(--gray-bg);
+   border: solid var(--gray-bg) 2px;
    cursor: pointer;
 }
