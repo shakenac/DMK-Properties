@@ -299,7 +299,7 @@
    font-weight: 400;
 }
 
-/* Footer ----------------------------------------------*/
+/* Footer --------------------------------------------------*/
 footer {
    padding: 10px;
    text-align: center;
@@ -308,4 +308,80 @@ footer {
 }
 footer p {
    font-size: 13px;
+}
+
+
+/* Media Queries ----------------------------------------------*/
+
+/* For hamburger menu & footer (930px)*/
+@media(max-width: 930px) {
+	.navbar {
+		/* need hamburger menu*/
+	}
+	footer {
+	}
+	/*dover gallery imgs*/
+	.grid-2-gallery {
+		grid-template-columns: 1fr;
+	}
+	/*inquire page form*/
+	.grid-2-contact {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* Tablets and under (anything that is under 768px) */
+@media(max-width: 768px) {
+
+	/*REDUCE HEIGHT OF COVER IMGS*/
+
+	.grid, .grid-2, .reviews .grid-3 {
+		grid-template-columns: 1fr;
+		grid-row-gap: 50px;
+		/* grid-template-rows: 1fr; */
+	}
+	.attractions .grid-3 {
+		grid-template-columns: 1fr 1fr;
+	}
+	.about {
+		margin: 80px auto;
+	}
+	.quote {
+		padding: 80px 0 60px 0;
+	}
+	.properties-home {
+		padding-bottom: 80px;
+	}
+	.properties-home h2 {
+		margin-bottom: 0;
+	}
+	.property-info {
+		margin: 80px auto 50px auto;
+	}
+
+	.contact, .inquire, .agreement {
+		margin: 80px auto 100px auto;
+	}
+	/* .grid,
+	.grid-2,
+	.grid-3,
+	.grid-2-gallery,
+	.grid-2-contact {
+	} */
+
+	/* .property-info, .property-highlights {
+		text-align: center;
+	}  */
+}
+
+/* Mobile */
+@media(max-width: 500px) {
+
+	.attractions .grid-3 {
+		grid-template-columns: 1fr;
+	}
+	/* .property-highlights .btn {
+		width: 100%;
+	}
+
 }
