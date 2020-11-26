@@ -301,13 +301,14 @@
 
 /* Footer --------------------------------------------------*/
 footer {
-   padding: 10px;
-   text-align: center;
+   padding: 20px 0;
+   /* text-align: center; */
    background-color: var(--gray-bg);
-   color: #888;
+   color: #999;
 }
 footer p {
    font-size: 13px;
+	margin: 0;
 }
 
 
@@ -333,14 +334,12 @@ footer p {
 /* Tablets and under (anything that is under 768px) */
 @media(max-width: 768px) {
 
-	/*REDUCE HEIGHT OF COVER IMGS*/
 	.cover {
 		height: 500px;
 	}
 	h1 {
 		font-size: 55px;
 	}
-
 	.grid, .grid-2, .reviews .grid-3 {
 		grid-template-columns: 1fr;
 		grid-row-gap: 50px;
@@ -364,20 +363,9 @@ footer p {
 	.property-info {
 		margin: 80px auto 50px auto;
 	}
-
 	.contact, .inquire, .agreement {
 		margin: 80px auto 100px auto;
 	}
-	/* .grid,
-	.grid-2,
-	.grid-3,
-	.grid-2-gallery,
-	.grid-2-contact {
-	} */
-
-	/* .property-info, .property-highlights {
-		text-align: center;
-	}  */
 }
 
 /* Mobile */
@@ -389,8 +377,4 @@ footer p {
 	.attractions .grid-3 {
 		grid-template-columns: 1fr;
 	}
-	/* .property-highlights .btn {
-		width: 100%;
-	}
-
 }
