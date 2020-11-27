@@ -19,8 +19,12 @@
 	/* -webkit-box-shadow: 1px 16px 10px -12px rgba(0, 0, 0, 0.4);
 	box-shadow: 1px 16px 10px -12px rgba(0, 0, 0, 0.4); */
 }
-.navbar .flex {
-	justify-content: flex-start; /*vertical alignment*/
+/* .navbar .flex {
+	justify-content: flex-start; /*vertical alignment
+} */
+.logo {
+	display: flex;
+	justify-content: center;
 }
 .navbar ul {
 	display: flex;
@@ -69,7 +73,7 @@
 .toggle-button {
 	position: absolute;
 	right: 1rem;
-	display: flex;
+	display: none;
 	flex-direction: column;
 	justify-content: space-between;
 	width: 45px;
@@ -340,11 +344,33 @@ footer p {
 
 /* For hamburger menu & footer (930px)*/
 @media(max-width: 930px) {
+	/* hamburger menu */
+
+	.toggle-button {
+		display: flex;
+		top: 20px;
+	}
 	.navbar {
-		/* need hamburger menu*/
+		flex-direction: column;
+		height: auto;
 	}
-	footer {
+	.navbar nav {
+		display: none;
+		width: 100%;
 	}
+	.navbar nav.active {
+		display: flex;
+	}
+	.navbar nav ul {
+		width: 100%;
+		flex-direction: column;
+	}
+	.navbar nav ul li {
+		text-align: center;
+		padding: 10px 0;
+	}
+
+
 	/*dover gallery imgs*/
 	.grid-2-gallery {
 		grid-template-columns: 1fr;
