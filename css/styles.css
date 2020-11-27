@@ -187,14 +187,19 @@
    padding-bottom: 150px;
 }
 .properties-home .properties-right .thumb-img {
-   max-height: 350px;
+   /* max-height: 350px; */
+	/* position: relative; */
+	overflow: hidden;
+	/* text-align: center; */
+
+}
+.properties-home .properties-right .thumb-img img {
+	width: 142.415%;
 }
 .properties-home .thumb-img {
    margin-bottom: 20px;
 }
-.properties-home img {
-   max-height: 350px;
-}
+
 
 /* Quote Section --------------------------------------*/
 .quote {
@@ -363,6 +368,7 @@ footer p {
 	.property-info {
 		margin: 80px auto 50px auto;
 	}
+
 	.contact, .inquire, .agreement {
 		margin: 80px auto 100px auto;
 	}
