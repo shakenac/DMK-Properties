@@ -64,6 +64,25 @@
 	/* justify-content: flex-start; */
 }
 
+
+/* Hamburger nav */
+.toggle-button {
+	position: absolute;
+	right: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 45px;
+	height: 35px;
+}
+.toggle-button .bar {
+	height: 2px;
+	width: 100%;
+	background-color: var(--gray-bg);
+	border-radius: 5px;
+}
+
+
 /* Cover Image (Home)----------------------------------*/
 .cover-img {
 	background-color: var(--gray-bg);
