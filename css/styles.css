@@ -382,10 +382,19 @@ footer p {
 
 	/* mobile dropdown */
 
-	/* .navbar .drop-menu {
-		background-color: #
-		margin: auto 0;
-	} */
+	.navbar .drop-menu {
+		/* margin: 0; */
+		margin-top: 7px;
+		-webkit-box-shadow: inset 0px -7px 6px -3px rgba(0,0,0,0.05), inset 0px 7px 6px -3px rgba(0,0,0,0.05);
+		box-shadow: inset 0px -7px 6px -3px rgba(0,0,0,0.05), inset 0px 7px 6px -3px rgba(0,0,0,0.05);
+	}
+	.navbar.container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.navbar li {
+		margin: 0;
+	}
 	.navbar .drop-menu.active {
 		display: flex;
 		flex-direction: column;
