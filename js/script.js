@@ -1,10 +1,13 @@
 const toggleButton = document.getElementsByClassName('toggle-button')[0];
 const navbarLinks = document.getElementsByTagName('nav')[0];
+const navbar = document.getElementsByClassName('navbar')[0];
+
 const propertiesDropdown = document.getElementsByClassName('properties-dropdown')[0];
 const dropMenu = document.getElementsByClassName('drop-menu')[0];
 
 toggleButton.addEventListener('click', () => {
-   navbarLinks.classList.toggle('active');
+   // navbarLinks.classList.toggle('active');
+   navbar.classList.toggle('active');
 })
 propertiesDropdown.addEventListener('click', () => {
    dropMenu.classList.toggle('active');
