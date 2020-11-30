@@ -48,7 +48,8 @@
 
 /* nav dropdown menu */
 .navbar .drop-menu {
-	display: none;
+	/* display: none; */
+	/* width: 100%; */
 }
 
 
@@ -322,6 +323,10 @@ footer p {
 		margin: 5px;
 		/* justify-content: flex-start; */
 	}
+	.navbar .drop-menu {
+		display: none;
+		/* width: 100%; */
+	}
 }
 
 /* For hamburger menu & footer (930px)*/
@@ -351,15 +356,53 @@ footer p {
 		/* overflow: hidden; */
 		flex-direction: column;
 		justify-content: flex-start;
-		transition: height 1s;
+		transition: height .6s;
 	}
 	.navbar.active {
 		width: 100%;
-		height: 300px;
+		height: 290px;
+	}
+
+	.navbar .drop-menu {
+		margin-top: 7px;
+		/* height: 0; */
+		-webkit-box-shadow: inset 0px -7px 6px -3px rgba(0,0,0,0.05), inset 0px 7px 6px -3px rgba(0,0,0,0.05);
+		box-shadow: inset 0px -7px 6px -3px rgba(0,0,0,0.05), inset 0px 7px 6px -3px rgba(0,0,0,0.05);
+		/* transition: height 5s; */
+	}
+	/* .navbar .drop-menu.active {
+		display: flex;
+		flex-direction: column;
+		height: 92px;
+		/* overflow: hidden;
+	} */
+
+	.navbar .properties-li {
+		height: 43px;
+		/* display: flex;
+		flex-direction: column; */
+		overflow: hidden;
+		margin-bottom: 2px;
+		transition: height .6s;
+	}
+	.navbar .properties-li.active {
+		height: 140px;
+		/* transition: height 2s; */
+	}
+
+
+	/* for when the dropmenu is open resize the height of the navbar to accomodate for the space */
+	.properties-active {
+		width: 100%;
+		height: 390px;
+	}
+
+	.navbar.container {
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 	.navbar nav {
-		/* display: none; */
 		display: flex;
 		width: 100%;
 	}
@@ -372,7 +415,9 @@ footer p {
 		text-align: center;
 		padding: 10px 0;
 	}
-
+	.navbar li {
+		margin: 0;
+	}
 	.navbar li a:hover {
 		font-weight: 700;
 	}
@@ -381,39 +426,16 @@ footer p {
 	}
 
 	/* mobile dropdown */
-	.navbar .drop-menu {
-		margin-top: 7px;
-		/* height: 92px; */
-		-webkit-box-shadow: inset 0px -7px 6px -3px rgba(0,0,0,0.05), inset 0px 7px 6px -3px rgba(0,0,0,0.05);
-		box-shadow: inset 0px -7px 6px -3px rgba(0,0,0,0.05), inset 0px 7px 6px -3px rgba(0,0,0,0.05);
-		/* transition: height 1s; */
-	}
-	.navbar .drop-menu.active {
-		display: flex;
-		flex-direction: column;
-		/* height: 92px; */
-	}
-	/* for when the dropmenu is open resize the height of the navbar to accomodate for the space */
-	.properties-active {
-		width: 100%;
-		height: 400px;
-	}
 
-	/*
-		if .drop-menu is clicked(active)
-		.navbar height: 300px;
-	*/
+
+	/* .properties-dropdown {
+		transition: height 1s;
+	} */
 
 
 
 
-	.navbar.container {
-		padding-left: 0;
-		padding-right: 0;
-	}
-	.navbar li {
-		margin: 0;
-	}
+
 
 	/* .mobile-properties {
 		display: flex;
