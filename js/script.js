@@ -6,14 +6,15 @@ const propertiesDropdown = document.getElementsByClassName('properties-dropdown'
 const dropMenu = document.getElementsByClassName('drop-menu')[0];
 
 toggleButton.addEventListener('click', () => {
-   // navbarLinks.classList.toggle('active');
    navbar.classList.toggle('active');
-   // if drop-menu is open when user closes the nav menu:
-   // if (dropMenu.classList.contains('active')) {
-   //    dropMenu.classList.toggle('active');
-   //    navbar.classList.toggle('active');
-   //    navbar.classList.toggle('active');
-   // }
+   if (navbar.classList.contains('properties-active')) {
+      // remove or toggle off the:
+      //navbar's properties-active
+      navbar.classList.remove('properties-active');
+      navbar.classList.remove('active');
+      //drop-menu's active
+      dropMenu.classList.remove('active');
+   }
 })
 
 // When the user clicks on the .properties-dropdown submenu,
