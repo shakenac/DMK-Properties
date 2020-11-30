@@ -3,9 +3,7 @@ const toggleButton = document.getElementsByClassName('toggle-button')[0];
 const navbar = document.getElementsByClassName('navbar')[0];
 const propertiesActive = document.getElementsByClassName('properties-active')[0];
 const propertiesDropdown = document.getElementsByClassName('properties-dropdown')[0];
-
 const propertiesLi = document.getElementsByClassName('properties-li')[0];
-
 const dropMenu = document.getElementsByClassName('drop-menu')[0];
 
 toggleButton.addEventListener('click', () => {
