@@ -31,3 +31,51 @@ propertiesDropdown.addEventListener('click', () => {
    // toggle .properties-active class to navbar
    navbar.classList.toggle('properties-active');
 })
+
+// If the users click outside of the navbar while it's open (mobile)
+const coverImg = document.getElementsByClassName('cover')[0];
+const aboutSection = document.getElementsByClassName('about')[0];
+
+coverImg.addEventListener('click', () => {
+   // if navbar is active and
+   if (navbar.classList.contains('properties-active')) {
+      // remove or toggle off the:
+      //navbar's properties-active
+      navbar.classList.remove('properties-active');
+      navbar.classList.remove('active');
+      //drop-menu's active
+      // dropMenu.classList.remove('active');
+      propertiesLi.classList.remove('active');
+   }
+   if (navbar.classList.contains('active')) {
+      // remove or toggle off the:
+      //navbar's properties-active
+      navbar.classList.remove('properties-active');
+      navbar.classList.remove('active');
+      //drop-menu's active
+      // dropMenu.classList.remove('active');
+      propertiesLi.classList.remove('active');
+   }
+})
+
+aboutSection.addEventListener('click', () => {
+   // if navbar is active and
+   if (navbar.classList.contains('properties-active')) {
+      // remove or toggle off the:
+      //navbar's properties-active
+      navbar.classList.remove('properties-active');
+      navbar.classList.remove('active');
+      //drop-menu's active
+      // dropMenu.classList.remove('active');
+      propertiesLi.classList.remove('active');
+   }
+   if (navbar.classList.contains('active')) {
+      // remove or toggle off the:
+      //navbar's properties-active
+      navbar.classList.remove('properties-active');
+      navbar.classList.remove('active');
+      //drop-menu's active
+      // dropMenu.classList.remove('active');
+      propertiesLi.classList.remove('active');
+   }
+})

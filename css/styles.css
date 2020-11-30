@@ -32,7 +32,7 @@
 	margin: 0 5px;
 }
 .navbar nav a {
-	padding: 10px;
+	padding: 22px 10px;
 }
 .navbar a:hover {
 	font-weight: 700;
@@ -312,11 +312,13 @@ footer p {
 		position: absolute;
 		display: flex;
 		flex-direction: column;
-		padding: 5px 10px;
+		padding: 18px 7px 15px 7px;
 		z-index: 1;
 		background: #fff;
 		-webkit-box-shadow: 1px 16px 10px -12px rgba(0, 0, 0, 0.4);
 		box-shadow: 1px 16px 10px -12px rgba(0, 0, 0, 0.4);
+		height: 106px;
+
 	}
 	.navbar .drop-menu li {
 		/* position: absolute; */
@@ -342,6 +344,7 @@ footer p {
 		width: 45px;
 		height: 35px;
 		padding: 10px;
+		transition: height .6s;
 	}
 	.toggle-button .bar {
 		height: 2px;
@@ -433,10 +436,6 @@ footer p {
 	} */
 
 
-
-
-
-
 	/* .mobile-properties {
 		display: flex;
 		flex-direction: column;
@@ -452,7 +451,15 @@ footer p {
 	.grid-2-contact {
 		grid-template-columns: 1fr;
 	}
+
+	/*removed top-bottom margin and added padding for click to close nav in mobile function*/
+	.about {
+		margin: 0 auto;
+		padding: 100px 40px;
+	}
 }
+
+
 
 /* Tablets and under (anything that is under 768px) */
 @media(max-width: 768px) {
@@ -471,9 +478,9 @@ footer p {
 	.attractions .grid-3 {
 		grid-template-columns: 1fr 1fr;
 	}
-	.about {
+	/* .about {
 		margin: 80px auto;
-	}
+	} */
 	.quote {
 		padding: 80px 0 60px 0;
 	}
