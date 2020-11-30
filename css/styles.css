@@ -345,20 +345,13 @@ footer p {
 		border-radius: 5px;
 	}
 
-	.logo {
-		/* justify-content: center;
-		align-self: flex-start; */
-		/* position: absolute;
-		top: 20px; */
-	}
-
 	.navbar {
 		width: 100%;
 		height: 60px;
-		transition: height 1s;
 		/* overflow: hidden; */
 		flex-direction: column;
 		justify-content: flex-start;
+		transition: height 1s;
 	}
 	.navbar.active {
 		width: 100%;
@@ -370,9 +363,7 @@ footer p {
 		display: flex;
 		width: 100%;
 	}
-	/* .navbar nav.active {
-		display: flex;
-	} */
+
 	.navbar nav ul {
 		width: 100%;
 		flex-direction: column;
@@ -388,12 +379,34 @@ footer p {
 	.navbar .logo img {
 		margin: 0;
 	}
+
 	/* mobile dropdown */
 	.navbar .drop-menu {
 		margin-top: 7px;
+		/* height: 92px; */
 		-webkit-box-shadow: inset 0px -7px 6px -3px rgba(0,0,0,0.05), inset 0px 7px 6px -3px rgba(0,0,0,0.05);
 		box-shadow: inset 0px -7px 6px -3px rgba(0,0,0,0.05), inset 0px 7px 6px -3px rgba(0,0,0,0.05);
+		/* transition: height 1s; */
 	}
+	.navbar .drop-menu.active {
+		display: flex;
+		flex-direction: column;
+		/* height: 92px; */
+	}
+	/* for when the dropmenu is open resize the height of the navbar to accomodate for the space */
+	.properties-active {
+		width: 100%;
+		height: 400px;
+	}
+
+	/*
+		if .drop-menu is clicked(active)
+		.navbar height: 300px;
+	*/
+
+
+
+
 	.navbar.container {
 		padding-left: 0;
 		padding-right: 0;
@@ -401,10 +414,7 @@ footer p {
 	.navbar li {
 		margin: 0;
 	}
-	.navbar .drop-menu.active {
-		display: flex;
-		flex-direction: column;
-	}
+
 	/* .mobile-properties {
 		display: flex;
 		flex-direction: column;
