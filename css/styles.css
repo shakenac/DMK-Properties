@@ -35,7 +35,8 @@
 	padding: 22px 10px;
 }
 .navbar a:hover {
-	font-weight: 700;
+	/* font-weight: 700; */
+	text-shadow: 0 0 .65px #333, 0 0 .65px var(--dark-gray);
 	transition: .2s ease-in-out;
 }
 .navbar img {
