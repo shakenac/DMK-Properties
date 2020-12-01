@@ -6,6 +6,7 @@ const propertiesLi = document.getElementsByClassName('properties-li')[0];
 const coverImg = document.getElementsByClassName('cover')[0];
 const aboutSection = document.getElementsByClassName('about')[0];
 
+
 function closeNav() {
    navbar.classList.remove('properties-active');
    navbar.classList.remove('active');
@@ -45,14 +46,17 @@ propertiesDropdown.addEventListener('click', () => {
       }
    })
 
-   // Close mobile nav when About section is clicked
-   aboutSection.addEventListener('click', () => {
-      // if navbar is active close it
-      if (navbar.classList.contains('active')) {
-         closeNav();
-      }
-      // if navbar and properties submenu is active close both:
-      if (navbar.classList.contains('properties-active')) {
-         closeNav();
-      }
+
+// Close mobile nav when clicking outside of nav
+let pageSections = document.querySelectorAll('section');
+   pageSections.forEach(function(e) {
+      e.addEventListener('click', () => {
+         if (navbar.classList.contains('active')) {
+            closeNav();
+         }
+         // if navbar and properties submenu is active close both:
+         if (navbar.classList.contains('properties-active')) {
+            closeNav();
+         }
+      })
    })
