@@ -1,79 +1,58 @@
 const toggleButton = document.getElementsByClassName('toggle-button')[0];
-// const navbarLinks = document.getElementsByTagName('nav')[0];
 const navbar = document.getElementsByClassName('navbar')[0];
 const propertiesActive = document.getElementsByClassName('properties-active')[0];
 const propertiesDropdown = document.getElementsByClassName('properties-dropdown')[0];
 const propertiesLi = document.getElementsByClassName('properties-li')[0];
-const dropMenu = document.getElementsByClassName('drop-menu')[0];
-
-toggleButton.addEventListener('click', () => {
-   navbar.classList.toggle('active');
-   if (navbar.classList.contains('properties-active')) {
-      // remove or toggle off the:
-      //navbar's properties-active
-      navbar.classList.remove('properties-active');
-      navbar.classList.remove('active');
-      //drop-menu's active
-      // dropMenu.classList.remove('active');
-      propertiesLi.classList.remove('active');
-   }
-})
-
-// When the user clicks on the .properties-dropdown submenu,
-propertiesDropdown.addEventListener('click', () => {
-   // the .drop-down menu will open (add/toggle .active class to drop-menu),
-   // dropMenu.classList.toggle('active');
-   propertiesLi.classList.toggle('active');
-   // toggle .active class of navbar
-   navbar.classList.toggle('active');
-   // toggle .properties-active class to navbar
-   navbar.classList.toggle('properties-active');
-})
-
-// If the users click outside of the navbar while it's open (mobile)
 const coverImg = document.getElementsByClassName('cover')[0];
 const aboutSection = document.getElementsByClassName('about')[0];
 
-coverImg.addEventListener('click', () => {
-   // if navbar is active and
+function closeNav() {
+   navbar.classList.remove('properties-active');
+   navbar.classList.remove('active');
+   propertiesLi.classList.remove('active');
+}
+function toggleSubMenu() {
+   navbar.classList.toggle('properties-active');
+   navbar.classList.toggle('active');
+   propertiesLi.classList.toggle('active');
+}
+
+
+// Open & Close mobile navigation menu
+toggleButton.addEventListener('click', () => {
+   navbar.classList.toggle('active');
+   // if properties submenu is active close it and the nav
    if (navbar.classList.contains('properties-active')) {
-      // remove or toggle off the:
-      //navbar's properties-active
-      navbar.classList.remove('properties-active');
-      navbar.classList.remove('active');
-      //drop-menu's active
-      // dropMenu.classList.remove('active');
-      propertiesLi.classList.remove('active');
-   }
-   if (navbar.classList.contains('active')) {
-      // remove or toggle off the:
-      //navbar's properties-active
-      navbar.classList.remove('properties-active');
-      navbar.classList.remove('active');
-      //drop-menu's active
-      // dropMenu.classList.remove('active');
-      propertiesLi.classList.remove('active');
+      closeNav();
    }
 })
 
-aboutSection.addEventListener('click', () => {
-   // if navbar is active and
-   if (navbar.classList.contains('properties-active')) {
-      // remove or toggle off the:
-      //navbar's properties-active
-      navbar.classList.remove('properties-active');
-      navbar.classList.remove('active');
-      //drop-menu's active
-      // dropMenu.classList.remove('active');
-      propertiesLi.classList.remove('active');
-   }
-   if (navbar.classList.contains('active')) {
-      // remove or toggle off the:
-      //navbar's properties-active
-      navbar.classList.remove('properties-active');
-      navbar.classList.remove('active');
-      //drop-menu's active
-      // dropMenu.classList.remove('active');
-      propertiesLi.classList.remove('active');
-   }
+// Open & Close mobile properties submenu
+propertiesDropdown.addEventListener('click', () => {
+   toggleSubMenu();
 })
+
+// If the users click outside of the navbar while it's open (mobile)
+   // Close mobile nav when Cover section is clicked
+   coverImg.addEventListener('click', () => {
+      // if navbar is active close it
+      if (navbar.classList.contains('active')) {
+         closeNav();
+      }
+      // if navbar and properties submenu is active close both:
+      if (navbar.classList.contains('properties-active')) {
+         closeNav();
+      }
+   })
+
+   // Close mobile nav when About section is clicked
+   aboutSection.addEventListener('click', () => {
+      // if navbar is active close it
+      if (navbar.classList.contains('active')) {
+         closeNav();
+      }
+      // if navbar and properties submenu is active close both:
+      if (navbar.classList.contains('properties-active')) {
+         closeNav();
+      }
+   })
