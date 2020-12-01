@@ -348,6 +348,24 @@ footer p {
 		width: 100%;
 		background-color: var(--gray-bg);
 		border-radius: 5px;
+		transition: 0.4s;
+	}
+
+	/* Rotate first bar */
+	.change .bar1 {
+	  -webkit-transform: rotate(-45deg) translate(-3px, 3px) ;
+	  transform: rotate(-45deg) translate(-3px, 3px) ;
+	}
+
+	/* Fade out the second bar */
+	.change .bar2 {
+	  opacity: 0;
+	}
+
+	/* Rotate last bar */
+	.change .bar3 {
+	  -webkit-transform: rotate(45deg) translate(-7px, -7px) ;
+	  transform: rotate(45deg) translate(-7px, -7px) ;
 	}
 
 	.navbar {

@@ -6,11 +6,14 @@ const propertiesLi = document.getElementsByClassName('properties-li')[0];
 const coverImg = document.getElementsByClassName('cover')[0];
 const aboutSection = document.getElementsByClassName('about')[0];
 
+const change = document.getElementsByClassName('change')[0];
+const bar = document.getElementsByClassName('bar')[0];
 
 function closeNav() {
    navbar.classList.remove('properties-active');
    navbar.classList.remove('active');
    propertiesLi.classList.remove('active');
+   toggleButton.classList.remove('change');
 }
 function toggleSubMenu() {
    navbar.classList.toggle('properties-active');
@@ -22,6 +25,7 @@ function toggleSubMenu() {
 // Open & Close mobile navigation menu
 toggleButton.addEventListener('click', () => {
    navbar.classList.toggle('active');
+   toggleButton.classList.toggle('change');
    // if properties submenu is active close it and the nav
    if (navbar.classList.contains('properties-active')) {
       closeNav();
@@ -45,7 +49,6 @@ propertiesDropdown.addEventListener('click', () => {
          closeNav();
       }
    })
-
 
 // Close mobile nav when clicking outside of nav
 let pageSections = document.querySelectorAll('section');
