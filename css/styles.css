@@ -1,9 +1,9 @@
-/* CSS pgs ---------------------------------*/
+/* CSS pgs --------------------------------------------*/
 @import "fonts.css";
 @import "utilities.css";
 @import "forms.css";
 
-/* Colors ---------------------------------------------*/
+/* Color Variables -------------------------------------*/
 :root {
 	--main-text-color: #000;
 	--gray-bg: #222;
@@ -18,7 +18,6 @@
 	padding: 10px;
 
 }
-
 .logo {
 	display: flex;
 	justify-content: center;
@@ -36,7 +35,7 @@
 }
 .navbar a:hover {
 	/* font-weight: 700; */
-	text-shadow: 0 0 .65px #333, 0 0 .65px var(--dark-gray);
+	text-shadow: 0 0 .65px var(--main-text-color), 0 0 .65px var(--main-text-color);
 	transition: .2s ease-in-out;
 }
 .navbar img {
@@ -44,13 +43,8 @@
 	margin-right: 40px;
 }
 .current {
-	font-weight: 700;
-}
-
-/* nav dropdown menu */
-.navbar .drop-menu {
-	/* display: none; */
-	/* width: 100%; */
+	/* font-weight: 700; */
+	text-shadow: 0 0 .65px var(--main-text-color), 0 0 .65px var(--main-text-color);
 }
 
 
@@ -160,7 +154,7 @@
 }
 
 
-/* About Section ----------------------------------------*/
+/* ---About Section--- */
 .about {
    margin: 150px auto;
    max-width: 750px;
@@ -172,16 +166,12 @@
 }
 
 
-/* Properties Section (Home) ---------------------------*/
+/* ---Properties Section (Home)--- */
 .properties-home {
    padding-bottom: 150px;
 }
 .properties-home .properties-right .thumb-img {
-   /* max-height: 350px; */
-	/* position: relative; */
 	overflow: hidden;
-	/* text-align: center; */
-
 }
 .properties-home .properties-right .thumb-img img {
 	width: 142.415%;
@@ -191,10 +181,9 @@
 }
 
 
-/* Quote Section --------------------------------------*/
+/* ---Quote Section--- */
 .quote {
    padding: 150px 0;
-   /* margin-bottom: 150px; */
    text-align: center;
    background-color: var(--yellow);
 }
@@ -203,8 +192,8 @@
    font-style: italic;
 }
 
-/* Dover Page ------------------------------------------*/
-/* Property Info */
+/* DOVER PAGE ------------------------------------------*/
+/* ---Property Info--- */
 .property-info {
    margin: 100px auto;
 }
@@ -224,12 +213,12 @@
    font-weight: 300;
 }
 
-/* Image gallery */
+/* ---Image gallery--- */
 .img-gallery {
    margin-bottom: 50px;
 }
 
-/* Local Attraction */
+/* ---Local Attraction--- */
 .attractions {
    /* margin-bottom: 150px; */
    padding-bottom: 80px;
@@ -306,65 +295,42 @@ footer p {
 }
 
 
-/* Media Queries ----------------------------------------------*/
-/* dropdown 'Properties' sub-menu appearing only @ 931px or above*/
+/* MEDIA QUERIES ----------------------------------------------*/
+
 @media(min-width: 931px) {
-	/* .navbar .drop-menu {
-		display: none;
-	} */
+
 	.navbar li {
-		/* justify-content: flex-start; */
 		margin: 0;
 	}
 	.navbar nav a {
-		/* justify-content: flex-start; */
 		padding: 22px 15px;
 	}
 	.navbar li > ul.drop-menu {
 		position: absolute;
 		display: block;
-		/* flex-direction: column; */
+		overflow: hidden;
 		padding: 4px 7px 15px 7px;
-		z-index: 1;
+		z-index: 2;
 		background: #fff;
 		-webkit-box-shadow: 1px 16px 10px -12px rgba(0, 0, 0, 0.4);
 		box-shadow: 1px 16px 10px -12px rgba(0, 0, 0, 0.4);
 		height: 0px;
-
 		width: 150px;
 		text-align: center;
 		margin-left: -17px;
-		overflow: hidden;
-		transition: height .5s;
+		transition: height .6s;
 	}
 	.navbar li:hover > ul.drop-menu {
-		/* position: absolute;
-		display: flex;
-		flex-direction: column;
-		padding: 18px 7px 15px 7px;
-		z-index: 1;
-		background: #fff;
-		-webkit-box-shadow: 1px 16px 10px -12px rgba(0, 0, 0, 0.4);
-		box-shadow: 1px 16px 10px -12px rgba(0, 0, 0, 0.4); */
 		height: 115px;
-		z-index: 1;
-		/* width: 150px; */
-		/* text-align: center;
-		margin-left: -17px; */
-
 	}
 	.navbar .drop-menu li {
-		/* position: absolute; */
-		/* margin: 10px; */
 		padding-top: 17px;
-		/* justify-content: flex-start; */
 	}
-
-
 }
 
-/* For hamburger menu & footer (930px)*/
+
 @media(max-width: 930px) {
+
 	/* Hamburger nav */
 	.toggle-button {
 		position: absolute;
@@ -376,7 +342,6 @@ footer p {
 		width: 45px;
 		height: 35px;
 		padding: 10px;
-		transition: height .6s;
 	}
 	.toggle-button .bar {
 		height: 2px;
@@ -388,29 +353,14 @@ footer p {
 	.navbar {
 		width: 100%;
 		height: 60px;
-		/* overflow: hidden; */
 		flex-direction: column;
 		justify-content: flex-start;
 		transition: height .6s;
 	}
 	.navbar.active {
 		width: 100%;
-		height: 290px;
+		height: 300px;
 	}
-
-	.navbar .drop-menu {
-		margin-top: 7px;
-		/* height: 0; */
-		-webkit-box-shadow: inset 0px -7px 6px -3px rgba(0,0,0,0.05), inset 0px 7px 6px -3px rgba(0,0,0,0.05);
-		box-shadow: inset 0px -7px 6px -3px rgba(0,0,0,0.05), inset 0px 7px 6px -3px rgba(0,0,0,0.05);
-		/* transition: height 5s; */
-	}
-	/* .navbar .drop-menu.active {
-		display: flex;
-		flex-direction: column;
-		height: 92px;
-		/* overflow: hidden;
-	} */
 
 	.navbar .properties-li {
 		height: 43px;
@@ -422,11 +372,9 @@ footer p {
 	}
 	.navbar .properties-li.active {
 		height: 140px;
-		/* transition: height 2s; */
 	}
 
-
-	/* for when the dropmenu is open resize the height of the navbar to accomodate for the space */
+	/* for when the properties dropmenu is open resize the height of the navbar to accomodate for the space */
 	.properties-active {
 		width: 100%;
 		height: 390px;
@@ -440,6 +388,7 @@ footer p {
 	.navbar nav {
 		display: flex;
 		width: 100%;
+		margin-top: 10px;
 	}
 
 	.navbar nav ul {
@@ -453,33 +402,22 @@ footer p {
 	.navbar li {
 		margin: 0;
 	}
-	.navbar li a:hover {
-		font-weight: 700;
-	}
 	.navbar .logo img {
 		margin: 0;
 	}
 
-	/* mobile dropdown */
+	.navbar .drop-menu {
+		margin-top: 7px;
+		-webkit-box-shadow: inset 0px -7px 6px -3px rgba(0,0,0,0.05), inset 0px 7px 6px -3px rgba(0,0,0,0.05);
+		box-shadow: inset 0px -7px 6px -3px rgba(0,0,0,0.05), inset 0px 7px 6px -3px rgba(0,0,0,0.05);
+		background-color: #fbfbfb;
+	}
 
-
-	/* .properties-dropdown {
-		transition: height 1s;
-	} */
-
-
-	/* .mobile-properties {
-		display: flex;
-		flex-direction: column;
-		height: auto;
-	} */
-
-
-	/*dover gallery imgs*/
+	/* dover gallery imgs */
 	.grid-2-gallery {
 		grid-template-columns: 1fr;
 	}
-	/*inquire page form*/
+	/* inquire page form */
 	.grid-2-contact {
 		grid-template-columns: 1fr;
 	}
@@ -492,8 +430,7 @@ footer p {
 }
 
 
-
-/* Tablets and under (anything that is under 768px) */
+/* ---Tablets--- */
 @media(max-width: 768px) {
 
 	.cover {
@@ -510,9 +447,6 @@ footer p {
 	.attractions .grid-3 {
 		grid-template-columns: 1fr 1fr;
 	}
-	/* .about {
-		margin: 80px auto;
-	} */
 	.quote {
 		padding: 80px 0 60px 0;
 	}
@@ -525,13 +459,13 @@ footer p {
 	.property-info {
 		margin: 80px auto 50px auto;
 	}
-
 	.contact, .inquire, .agreement {
 		margin: 80px auto 100px auto;
 	}
 }
 
-/* Mobile */
+
+/* ---Mobile--- */
 @media(max-width: 500px) {
 
 	.navbar .logo img {
