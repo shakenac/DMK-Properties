@@ -3,35 +3,38 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- <link rel="stylesheet" href="css/reset.css"> -->
-	<!-- <link rel="stylesheet" href="css/utilities.css"> -->
 	<link rel="stylesheet" href="css/styles.css">
 	<title>DMK Properties LLC</title>
 </head>
 <body>
 	<!-- .navbar -->
-	<div class="navbar">
-		<div class="container flex">
-			<a class="flex" href="index.html">
-				<img src="images/dmk_logos.png" alt="DMK Properties Logo">
-			</a>
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a class="properties-dropdown" href="#">Properties</a>
-						<ul class="drop-menu">
-							<li><a href="dover.html">Dover, DE</a></li>
-							<li><a href="bronx.html">Bronx, NY</a></li>
-						</ul>
-					</li>
-					<li><a href="contact.html">Contact</a></li>
-					<li><a class="current" href="inquire.html">Inquire</a></li>
-					<li><a href="agreement.html">Property Rules</a></li>
-				</ul>
-			</nav>
+	<div class="navbar container flex">
+		<a class="logo" href="index.html">
+			<img src="images/dmk_logos.png" alt="DMK Properties Logo">
+		</a>
+		<!-- hamburger icon -->
+		<a class="toggle-button" href="#">
+			<span class="bar"></span>
+			<span class="bar"></span>
+			<span class="bar"></span>
+		</a>
 
-		</div><!--.container .flex-->
-	</div><!--.navbar-->
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li class="properties-li">
+					<a class="properties-dropdown" href="#">&plus; Properties</a>
+					<ul class="drop-menu">
+						<li><a href="dover.html">Dover, DE</a></li>
+						<li><a href="bronx.html">Bronx, NY</a></li>
+					</ul>
+				</li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a class="current" href="inquire.html">Inquire</a></li>
+				<li><a href="agreement.html">Property Rules</a></li>
+			</ul>
+		</nav>
+	</div>
 
 	<!-- Cover Image -->
 	<section class="cover cover-img-inquire">
@@ -127,5 +130,6 @@
 		</div>
 	</footer>
 
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

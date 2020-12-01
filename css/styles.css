@@ -246,7 +246,8 @@
 
 /* Contact Page ----------------------------------------------*/
 .contact {
-   margin: 100px auto;
+   /* margin: 100px auto; */
+	padding: 100px 40px;
 }
 .contact p {
    margin: 0;
@@ -267,7 +268,7 @@
    font-weight: 400;
 }
 
-/* Inquire Page ----------------------------------------------*/
+/* Property Rules Page ----------------------------------------------*/
 .agreement {
    margin: 100px auto;
 }
@@ -427,6 +428,13 @@ footer p {
 		margin: 0 auto;
 		padding: 100px 40px;
 	}
+	.property-info,
+	.inquire,
+	.agreement {
+		padding: 80px 40px;
+		margin: 0 auto;
+	}
+
 }
 
 
@@ -456,11 +464,11 @@ footer p {
 	.properties-home h2 {
 		margin-bottom: 0;
 	}
-	.property-info {
-		margin: 80px auto 50px auto;
-	}
-	.contact, .inquire, .agreement {
-		margin: 80px auto 100px auto;
+
+	.contact,
+	.inquire,
+	.agreement {
+		padding: 80px 40px;
 	}
 }
 
@@ -476,5 +484,12 @@ footer p {
 	}
 	.attractions .grid-3 {
 		grid-template-columns: 1fr;
+	}
+	.about,
+	.property-info,
+	.contact,
+	.inquire,
+	.agreement {
+		padding: 60px 40px;
 	}
 }
