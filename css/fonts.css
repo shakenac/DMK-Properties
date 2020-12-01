@@ -1,19 +1,17 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap'); */
-
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
 
 
 @font-face {
 	font-family: 'Karoll-LightRound';
-	src: url('/fonts/Karoll-LightRound.woff') format('woff'), url('/fonts/Karoll-LightRound.ttf') format('truetype');
+	src: url('./fonts/Karoll-LightRound.woff') format('woff'), url('/fonts/Karoll-LightRound.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'Karoll-Round';
-	src: url('/fonts/Karoll-Round.woff') format('woff'), url('/fonts/Karoll-Round.ttf') format('truetype');
+	src: url('./fonts/Karoll-Round.woff') format('woff'), url('/fonts/Karoll-Round.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'Karoll-BoldRound';
-	src: url('/fonts/Karoll-BoldRound.woff') format('woff'), url('/fonts/Karoll-BoldRound.ttf') format('truetype');
+	src: url('./fonts/Karoll-BoldRound.woff') format('woff'), url('/fonts/Karoll-BoldRound.ttf') format('truetype');
 }
